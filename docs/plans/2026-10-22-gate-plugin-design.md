@@ -7,7 +7,7 @@ person installs with one command and keeps on in daily work.
 ## What the user gets
 
 ```sh
-claude plugin install patton-gate --marketplace vladimirrott/patton-protocol
+claude plugin install patton-gate --marketplace agentsmith-tools/patton-protocol
 ```
 
 From the next session on, Claude Code asks before any tool call that would change, move or delete a file that

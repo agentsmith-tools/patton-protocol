@@ -6,8 +6,8 @@
     "name": "Vladimir Rotariu",
     "url": "https://github.com/vladimirrott"
   },
-  "homepage": "https://github.com/vladimirrott/patton-protocol/tree/main/plugins/patton-gate",
-  "repository": "https://github.com/vladimirrott/patton-protocol",
+  "homepage": "https://github.com/agentsmith-tools/patton-protocol/tree/main/plugins/patton-gate",
+  "repository": "https://github.com/agentsmith-tools/patton-protocol",
   "license": "MIT",
   "hooks": "./hooks/codex-hooks.json"
 }

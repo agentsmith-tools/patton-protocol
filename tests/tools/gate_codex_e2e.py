@@ -2,7 +2,7 @@
 """End to end, for $0: install the patton-gate plugin into real Codex CLI the way a person does, then drive it.
 
     python3 tests/tools/gate_codex_e2e.py                      # the marketplace in this checkout
-    python3 tests/tools/gate_codex_e2e.py --source vladimirrott/patton-protocol   # the published one
+    python3 tests/tools/gate_codex_e2e.py --source agentsmith-tools/patton-protocol   # the published one
 
 Every codex call runs with a scratch HOME and CODEX_HOME, so the person's own ~/.codex and login are never read.
 The model is the lab's scripted Responses endpoint (lab/patton_lab/codex/fake_upstream.py) on 127.0.0.1, with a

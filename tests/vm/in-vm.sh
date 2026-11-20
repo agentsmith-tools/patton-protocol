@@ -20,7 +20,7 @@ step "install the plugin with one command (source: ${PATTON_VM_SOURCE:-checkout}
 t0=$(when)
 if [ "${PATTON_VM_SOURCE:-checkout}" = github ]; then
     # the README's two commands: a full clone of the repository is 550 MB and outlasts Claude Code's git timeout
-    claude plugin marketplace add vladimirrott/patton-protocol --sparse .claude-plugin plugins
+    claude plugin marketplace add agentsmith-tools/patton-protocol --sparse .claude-plugin plugins
     claude plugin install patton-gate@patton-protocol -y
 else
     claude plugin install patton-gate --marketplace "$HOME/patton-protocol" -y
@@ -102,7 +102,7 @@ export NODE_OPTIONS="--network-family-autoselection-attempt-timeout=2000"
 npm install -g --silent @openai/codex@0.159.0
 codex --version
 if [ "${PATTON_VM_SOURCE:-checkout}" = github ]; then
-    codex_source="vladimirrott/patton-protocol"
+    codex_source="agentsmith-tools/patton-protocol"
 else
     codex_source="$HOME/patton-protocol"
 fi
