@@ -141,7 +141,7 @@ python3 tests/tools/gate_missions_e2e.py --claude claude --plugin-dir plugins/pa
 `gate_missions_e2e.py` plays the main agent and each subagent with `tests/tools/fake_agents.py`, which tells their
 conversations apart by the prompt. For Codex, `python3 tests/tools/gate_codex_e2e.py` installs the plugin from this
 checkout into a scratch `CODEX_HOME`, trusts its hooks, and drives real Codex with the lab's scripted model, for $0;
-it needs `codex` 0.159 or newer on `PATH`, and `--source vladimirrott/patton-protocol` tests the published copy.
+it needs `codex` 0.159 or newer on `PATH`, and `--source agentsmith-tools/patton-protocol` tests the published copy.
 
 All of them end with `all checks passed` or a list of failures. `--installed` tests the plugin installed for your user
 instead; it uses your real home and marks the scratch project as trusted in `~/.claude.json`, so the VM script uses

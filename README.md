@@ -4,7 +4,7 @@
 
 # Patton Protocol
 
-![CI](https://github.com/vladimirrott/patton-protocol/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/agentsmith-tools/patton-protocol/actions/workflows/ci.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 `patton-gate` is a hook for Claude Code and Codex CLI. Before your coding agent changes, moves or deletes a file that
@@ -83,7 +83,7 @@ An earlier study put a gate of the same design inside a sandbox, and harm was 0.
 **Claude Code** (2.1.295 or newer, `python3` 3.10 or newer), from your shell:
 
 ```sh
-claude plugin marketplace add vladimirrott/patton-protocol --sparse .claude-plugin plugins
+claude plugin marketplace add agentsmith-tools/patton-protocol --sparse .claude-plugin plugins
 claude plugin install patton-gate@patton-protocol
 ```
 
@@ -95,7 +95,7 @@ records, took two minutes on a fast link, and Claude Code stops a clone after tw
 which Codex skips until you do:
 
 ```sh
-codex plugin marketplace add vladimirrott/patton-protocol --sparse .agents --sparse .claude-plugin --sparse plugins && codex plugin add patton-gate@patton-protocol && python3 "${CODEX_HOME:-$HOME/.codex}"/plugins/cache/patton-protocol/patton-gate/*/scripts/patton_gate.py codex-trust
+codex plugin marketplace add agentsmith-tools/patton-protocol --sparse .agents --sparse .claude-plugin --sparse plugins && codex plugin add patton-gate@patton-protocol && python3 "${CODEX_HOME:-$HOME/.codex}"/plugins/cache/patton-protocol/patton-gate/*/scripts/patton_gate.py codex-trust
 ```
 
 Run the trust step again after `codex plugin marketplace upgrade`: Codex drops trust when a hook changes. Codex hooks cannot ask a
